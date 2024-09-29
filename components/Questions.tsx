@@ -6,6 +6,7 @@ import { questions } from "@/questions";
 export default function Questions() {
   const [selectedOption, setSelectedOption] = useState<{ [key: number]: string }>({});
   const [showAnswer, setShowAnswer] = useState<{ [key: number]: boolean }>({});
+  const [isCorrect, setIsCorrect] = useState<{ [key: number]: boolean }>({}); // To track if the selected option is correct
   const [currentPage, setCurrentPage] = useState(1);
   const questionsPerPage = 20;
 
@@ -15,11 +16,15 @@ export default function Questions() {
   const handleOptionClick = (questionId: number, optionKey: string, correctOption: string) => {
     setSelectedOption((prev) => ({ ...prev, [questionId]: optionKey }));
     setShowAnswer((prev) => ({ ...prev, [questionId]: true }));
+
+    // Check if the selected option is the correct one
+    setIsCorrect((prev) => ({ ...prev, [questionId]: optionKey === correctOption }));
   };
 
   const handleHideAnswer = (questionId: number) => {
     setShowAnswer((prev) => ({ ...prev, [questionId]: false }));
     setSelectedOption((prev) => ({ ...prev, [questionId]: "" }));
+    setIsCorrect((prev) => ({ ...prev, [questionId]: false })); // Reset the correctness check
   };
 
   const handlePageChange = (newPage: number) => {
@@ -97,7 +102,11 @@ export default function Questions() {
             </ul>
             {showAnswer[question.id] && (
               <div className="mt-4 text-sm">
-                <p className="text-green-600">Correct answer: {question.correctOption}</p>
+                {isCorrect[question.id] ? (
+                  <p className="text-green-600">Correct! The answer is {question.correctOption}</p>
+                ) : (
+                  <p className="text-red-600">Incorrect. The correct answer is {question.correctOption}</p>
+                )}
                 {question.comment && <p className="text-gray-700 mt-2 italic">{question.comment}</p>}
               </div>
             )}
