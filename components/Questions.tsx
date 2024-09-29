@@ -108,14 +108,16 @@ export default function Questions() {
                   <p className="text-red-600">Incorrect. The correct answer is {question.correctOption}</p>
                 )}
                 {question.comment && <p className="text-gray-700 mt-2 italic">{question.comment}</p>}
-              </div>
-            )}
-            <button
+
+                <button
               onClick={() => handleHideAnswer(question.id)}
               className="mt-4 bg-blue-600 text-white px-4 py-2 rounded-md shadow-md hover:bg-blue-700 transition-all"
             >
               Hide Answer
             </button>
+              </div>
+            )}
+          
           </div>
         </div>
       ))}
