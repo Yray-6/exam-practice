@@ -6381,51 +6381,14 @@ type Options = {
   id: 620,
   question: "Under-listed are the rules Governing the Extension of Credit. One of the items is missing, fill in the blank: I. Credit Approval II. Risk Rating Limits III. One Obligor Concept IV. ____",
   options: {
-    A: "",
+    A: "empty",
     B: "Risk Rating Limits",
     C: "Credit Approval",
      D:"One Obligor Concept"
   },
   correctOption: "Approval Authorities",
 },
-{
-  id: 621,
-  question: "Under-listed are the rules Governing the Extension of Credit. One of the items is missing, fill in the blank: I. ____ II. Risk Rating Limits III. One Obligor Concept IV. Approval Authorities",
-  options: {
-    A: "",
-    B: "Approval Authorities",
-    C: "Risk Rating Limits",
-    D:"One Obligor Concept"
-  },
-  correctOption: "Credit Approval",
-},
-{
-  id: 622,
-  question: "Under-listed are the rules Governing the Extension of Credit. One of the items is missing, fill in the blank: I. Credit Approval II. ____ III. One Obligor Concept IV. Approval Authorities",
-  options: {
-    A: "Approval Authorities",
-    B: "",
-    C: "Credit Approval",
-    D:"One Obligor Concept"
 
-  },
-  correctOption: "Risk Rating Limits",
-}
-,
-
-{
-  id: 622,
-  question: "Under-listed are the rules Governing the Extension of Credit one of the Items is missing fill in the Blank",
-  options: {
-    A: "Approval Authorities",
-    B: "Risk Rating Limits",
-    C: "Credit Approval",
-    D:""
-
-  },
-  correctOption: "One Obligor ConcepT",
-}
-,
 {
   id: 625,
   question: "Risk Rating Limits, shall always prevail over Legal Lending Limits set by the Regulators.",
