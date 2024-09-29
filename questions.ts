@@ -10,7 +10,7 @@ type Options = {
   [key: string]: string; // This allows for extra options like E, F, G, etc.
 };
 
-export const questions: Question[] = [
+ export const questions:Question[]= [
   {
     id: 1,
     question: "Why is it critical for Marketing/relationship management officers to maintain direct contact with customers through periodic visits after extending credit?",
@@ -5288,7 +5288,7 @@ export const questions: Question[] = [
   correctOption: "C",
 },
 
-,
+
   {
     id: 500,
     question: "An approved Risk Rating Limit exception does not need to be re-approved during the annual review process.",
@@ -5442,7 +5442,7 @@ export const questions: Question[] = [
     },
     correctOption: "A",
   },
-  {
+   {
     id: 517,
     question: "Understanding these principles will give you a better understanding of credit policy.",
     options: {
