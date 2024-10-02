@@ -161,25 +161,26 @@ type Options = {
   },
   {
     id: 13,
-    question: "How often must obligor and facility exposure quality and performance grades be reviewed?",
+    question: "What is the frequency of the conduct of physical verification of all credit documentation",
     options: {
-      A: "As the need arises.",
+      A: "Monthly",
       B: "Quarterly.",
-      C: "Annually.",
-      D: "On a case-by-case basis.",
+      C: "Semi-Annually.",
+      D: "Annually",
+      E:"As the need arises."
     },
     correctOption: "D",
     comment:"See Page 147 for reference"
   },
   {
     id: 14,
-    question: "What is the primary information source for decision-making on credits and customer relationships?",
+    question: "How often does CRM and relevant approval authority review all outstanding credit transactions and commitments?",
     options: {
-      A: "Credit files.",
-      B: "Direct customer contacts.",
-      C: "Bank & credit checks.",
-      D: "Newspapers and business journals.",
-      E: "All of the above.",
+      A: "Monthly",
+      B: "Quarterly.",
+      C: "Semi-Annually.",
+      D: "Annually",
+      E:"As the need arises."
     },
     correctOption: "D",
   },
