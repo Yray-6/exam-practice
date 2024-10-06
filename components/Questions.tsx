@@ -27,11 +27,16 @@ export default function Questions() {
 
   const handlePageChange = (newPage: number) => {
     setCurrentPage(newPage);
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   };
 
   const indexOfLastQuestion = currentPage * questionsPerPage;
   const indexOfFirstQuestion = indexOfLastQuestion - questionsPerPage;
   const currentQuestions = questions.slice(indexOfFirstQuestion, indexOfLastQuestion);
+
 
   return (
     <div className="pt-28 pb-12 px-6 lg:px-16">
