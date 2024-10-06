@@ -186,15 +186,15 @@ type Options = {
   },
   {
     id: 15,
-    question: "How often must credit files be reviewed?",
+    question: "Under what circumstances will collateral be released to a customer",
     options: {
-      A: "If the need arises.",
-      B: "Periodically.",
-      C: "Monthly.",
-      D: "Quarterly.",
-      E: "All of the above.",
+      A: "Upon confirmation of full repayment of facility ",
+      B: "Upon liquidation of facility in accordance with agreed terms and condition.",
+      C: "At the request of the customer",
+      D: "As the need arises",
+
     },
-    correctOption: "B",
+    correctOption: "D",
   },
   {
     id: 16,
@@ -1891,12 +1891,12 @@ type Options = {
     id: 164,
     question: "Policy Loans: These are exceptional or unsecured credit extensions to certain companies and/or individuals having special relationships with the Bank, some of which are already subject to certain restrictions by law except:",
     options: {
-      A: "Unsecured credit to Bank Directors",
-      B: "To companies where Bank Directors are also directors",
-      C: "Corporate guarantees",
-      D: "All of the above",
+      A: "Unsecured credit to Bank Directors, to companies where Bank Directors are also Directors, or companies owned or controlled by close associates or relatives of Directors of the Bank. Such loans must be mentioned at Board meetingsfor ratification",
+      B: "Politically sensitive credits granted because of the privilege position of an obligor or guarantor or the nature of the project", 
+      C: "Unsecured credit to executives of client-companies, executives of other Banks or highly connected individuals in business or government circles.",
+      D: "Loans to staff of the bank",
     },
-    correctOption: "E",
+    correctOption: "D",
   }
   , {
     id: 165,
@@ -1935,12 +1935,12 @@ type Options = {
     id: 168,
     question: "Advance Payment, Bid Bonds, and Guarantees should contain all of the following elements except:",
     options: {
-      A: "The Bank's undertaking must contain a specific expiration date",
-      B: "The Bank's undertaking must be limited to a stated amount",
+      A: "The Bank’s undertaking must contain a specific expiration date or a defined term",
+      B: "The Bank’s undertaking must be limited to a stated amount",
       C: "The Bank’s obligation to pay must arise upon the fulfillment of certain specified conditions",
       D: "The Bank may not charge a fee for its issuance",
     },
-    correctOption: "E",
+    correctOption: "D",
   },
   {
     id: 169,
