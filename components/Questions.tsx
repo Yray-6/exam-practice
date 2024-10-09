@@ -53,7 +53,7 @@ export default function Questions() {
         <h2 className="text-2xl lg:text-3xl font-semibold text-blue-900 mb-4">
           Welcome to the Practice Test
         </h2>
-        <button onClick=(()=>{handleShuffle(currentQuestions)})>Shuffle</button>
+        <button onClick=(()=>{handleShuffle(questions)})>Shuffle</button>
         <p className="text-base lg:text-lg text-gray-700 mb-2">
           This practice test will help you prepare for the CPG exam. Carefully read each question and choose the best answer.
         </p>
