@@ -1563,7 +1563,7 @@ type Options = {
       C: "Provide a framework for the ongoing maintenance of the bank’s risk management policies and processes",
       D: "Prudent management of decline in credit quality.",
     },
-    correctOption: "D",
+    correctOption: "A",
   },
   {
     id: 135,
