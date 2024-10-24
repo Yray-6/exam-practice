@@ -187,7 +187,7 @@ const QuestionsPage = () => {
 
     const timer = setTimeout(() => {
       setPracticeMode(mode);
-      handlePageChange(1)
+      handlePageChange(1);
     }, 2000);
 
     return () => clearTimeout(timer);
@@ -350,7 +350,9 @@ const QuestionsPage = () => {
 
       <div
         className={` ${
-          practiceMode !== "standard" || "test" ? "hidden" : "flex"
+          practiceMode === "standard" || practiceMode === "test"
+            ? "flex"
+            : "hidden"
         } justify-between items-center mb-8`}
       >
         <button
